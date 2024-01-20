@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="">
+      <div class="container">
+        <div class="logo">
+          <img src="./imgs/logo@2x.png" alt="" />
+        </div>
+        <!-- <div class="navbar">
+            <ul class="" >
+                <li><a href="">Home</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">live Cameras</a></li>
+                <li><a href="">Photos</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+    
+        </div> -->
+      </div>
+    </nav>
+
+    <section id="home">
+      <div class="container">
+        <form>
+          <input
+            type="text"
+            class="form-control my-5 rounded-4"
+            placeholder="Search..."
+            id="search-input"
+          />
+        </form>
+      </div>
+    </section>
+    <div class="sections">
+      <div class="container">
+        <div class="row">
+          <!-- ===today=== -->
+          <div class="first-box col-md-4 my-5 rounded-3 text-light">
+            <div class="today d-flex justify-content-between py-2">
+              <p id="today-name" class="my-auto"></p>
+
+              <div class="details d-flex">
+                <p id="today-number" class="my-auto"></p>
+                <p id="today-month" class="my-auto"></p>
+              </div>
+            </div>
+
+            <div id="contnetId" class="content">
+              <div id="today-location" class="city"></div>
+              <div class="d-flex justify-content-between">
+                <div class="temp">
+                  <span id="today-temp">5</span>
+                  <span><sup>o</sup>C</span>
+                </div>
+               <img id="today-img"  />
+              </div>
+              <p id="today-text" class="text-danger"></p>
+            </div>
+            <div class="box-footer d-flex">
+              <div class="d-flex me-2">
+                <img src="imgs/icon-umberella.png" class="footer-icon mx-2" />
+                <p id="humidity"></p>
+              </div>
+              <div class="d-flex px-2">
+                <img
+                  src="imgs//icon-wind.png"
+                  class="footer-icon mx-2"
+                  alt=""
+                />
+                <p id="wind">16.9km/h</p>
+              </div>
+              <div class="d-flex px-2">
+                <img
+                  src="imgs/icon-compass.png"
+                  class="footer-icon mx-2"
+                  alt=""
+                />
+                <p id="wind-direction">SSW</p>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- tomorrow -->
+          <div class="second-box col-md-4 my-5 rounded-3 text-light">
+            <div class="py-2 text-center tomorrow-name">
+              <p class="my-auto"></p>
+            </div>
+            <div
+              id="tomorrow"
+              class="item-content text-start text-light p-3 text-center"
+            >
+             <div class="tomorrow-img"><img src="imgs/302.webp" alt="" /></div> 
+              <div class="fw-bold fs-4">
+                <span class="next-max-temp"></span>
+                <span><sup>o</sup>C</span>
+              </div>
+              <div>
+                <span class="next-min-temp"></span>
+                <span><sup>o</sup>C</span>
+              </div>
+              <p class="text-warning tomorrow-text"></p>
+            </div>
+          </div>
+
+              <!--after tommorow -->
+              <div class="first-box col-md-4 my-5 rounded-3 text-light">
+                <div class="py-2 text-center tomorrow-name">
+                  <p class="my-auto"></p>
+                </div>
+                <div
+                  id="tomorrow"
+                  class="item-content text-start text-light p-3 text-center"
+                >
+                  <img  class="tomorrow-img" src="imgs/176.webp" alt="" />
+                  <div class="fw-bold fs-4">
+                    <span class="next-max-temp"></span>
+                    <span><sup>o</sup>C</span>
+                  </div>
+                  <div>
+                    <span class="next-min-temp">5</span>
+                    <span><sup>o</sup>C</span>
+                  </div>
+                  <p class="text-danger tomorrow-text"></p>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

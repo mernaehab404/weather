@@ -1,0 +1,36 @@
+.logo{
+    padding: 40px;
+}
+.logo img{
+width: 5%;
+}
+/* nav{
+    background-color: darkgrey;
+} */
+
+body{
+    background-image: url('../imgs/sun-shining-dark-clouds-green-field.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+.container{
+    width: 65%;
+    margin: auto;
+}
+.first-box{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.temp{
+    font-size: 50px;
+}
+#today-img img{
+    width: 85px;
+}
+.box-footer img {
+    width: 30px;
+    height: 30px;
+}
+.second-box{
+    background-color: rgba(107, 186, 172, 0.6);
+}
